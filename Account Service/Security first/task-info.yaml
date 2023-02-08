@@ -696,36 +696,6 @@ files:
 
     }
   learner_created: true
-- name: src/account/auth/AuthController.java
-  visible: true
-  text: |
-    package account.auth;
-
-    import account.DTOs.SignupDTO;
-    import org.springframework.beans.factory.annotation.Autowired;
-    import org.springframework.http.ResponseEntity;
-    import org.springframework.validation.annotation.Validated;
-    import org.springframework.web.bind.annotation.PostMapping;
-    import org.springframework.web.bind.annotation.RequestBody;
-    import org.springframework.web.bind.annotation.RequestMapping;
-    import org.springframework.web.bind.annotation.RestController;
-
-    import javax.validation.Valid;
-
-    @RestController
-    @RequestMapping("api/auth/")
-    @Validated
-    public class AuthController {
-
-        @Autowired
-        private UserDetailsServiceImpl userDetailsService;
-
-        @PostMapping("signup")
-        public ResponseEntity<Object> signup(@RequestBody @Valid SignupDTO input){
-            return userDetailsService.signupUser(input);
-        }
-    }
-  learner_created: true
 - name: src/account/auth/RestAuthenticationEntryPoint.java
   visible: true
   text: |
@@ -921,27 +891,42 @@ files:
         }
     }
   learner_created: true
-feedback_link: https://hyperskill.org/learn/step/16603#comment
-status: Failed
-feedback:
-  message: |-
-    Wrong answer in test #11
+- name: src/account/auth/AuthController.java
+  visible: true
+  text: |
+    package account.auth;
 
-    POST /api/auth/signup should respond with status code 400 , responded: 200
-    Response body:
-    {
-      &quot;id&quot; : 1,
-      &quot;name&quot; : &quot;John&quot;,
-      &quot;lastname&quot; : &quot;Doe&quot;,
-      &quot;email&quot; : &quot;JohnDoe@acme.com&quot;
+    import account.DTOs.SignupDTO;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.validation.annotation.Validated;
+    import org.springframework.web.bind.annotation.PostMapping;
+    import org.springframework.web.bind.annotation.RequestBody;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+
+    import javax.validation.Valid;
+
+    @RestController
+    @RequestMapping("api/auth/")
+    @Validated
+    public class AuthController {
+
+        @Autowired
+        private UserDetailsServiceImpl userDetailsService;
+
+        @PostMapping("signup")
+        public ResponseEntity<Object> signup(@RequestBody @Valid SignupDTO input){
+            return userDetailsService.signupUser(input);
+        }
     }
-    Request body:
-    {
-      &quot;name&quot;: &quot;John&quot;,
-      &quot;lastname&quot;: &quot;Doe&quot;,
-      &quot;email&quot;: &quot;JohnDoe@acme.com&quot;,
-      &quot;password&quot;: &quot;PasswordForJanuary&quot;
-    }
-    Sending password from breached list
-  time: "Wed, 25 Jan 2023 05:41:41 UTC"
-record: -1
+  learner_created: true
+- name: src/account/DTOs/ChangePassDTO.java
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/16603#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 26 Jan 2023 05:33:42 UTC"
+record: 3

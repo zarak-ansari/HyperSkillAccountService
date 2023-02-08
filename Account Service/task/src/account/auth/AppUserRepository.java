@@ -8,4 +8,5 @@ public interface AppUserRepository extends JpaRepository<AppUser, Long> {
 
     Optional<AppUser> findByEmailIgnoreCase(String username);
 
+    void deleteByEmail(String email);
 }

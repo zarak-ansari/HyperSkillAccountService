@@ -1,8 +1,6 @@
 package account.DTOs;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 
 public class SignupDTO {
 
@@ -13,6 +11,7 @@ public class SignupDTO {
     @NotEmpty @NotNull @Email (regexp = ".+@acme\\.com$")
     private String email;
     @NotEmpty @NotNull
+    @Size(min=12, message = "The password length must be at least 12 chars!")
     private String password;
 
     public SignupDTO() {

@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/612593/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Wed, 25 Jan 2023 04:22:22 UTC"
+update_date: "Wed, 08 Feb 2023 14:45:56 UTC"
 stages:
 - id: 1086
   step: 16601
@@ -13,19 +13,19 @@ stages:
   is_completed: true
 - id: 1088
   step: 16603
-  is_completed: false
+  is_completed: true
 - id: 1089
   step: 16604
-  is_completed: false
+  is_completed: true
 - id: 1090
   step: 16605
-  is_completed: false
+  is_completed: true
 - id: 1091
   step: 16606
-  is_completed: false
+  is_completed: true
 - id: 1092
   step: 16607
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: "Write, compile, and run"
@@ -72,6 +72,8 @@ topics:
     theory_id: 19487
   - title: Bean lifecycle
     theory_id: 19550
+  - title: The concept of patterns
+    theory_id: 3611
   - title: HTTP messages
     theory_id: 6752
   - title: Introduction to Spring Web MVC
@@ -80,18 +82,24 @@ topics:
     theory_id: 7834
   - title: Postman
     theory_id: 8512
+  - title: Introduction to Spring Data
+    theory_id: 16299
+  - title: CRUD repositories
+    theory_id: 18031
   - title: Insecure Cryptographic Storage
     theory_id: 20069
   - title: Spring Security Crypto
     theory_id: 21866
-  - title: "Web security, OWASP"
-    theory_id: 14755
   - title: Getting data from REST
     theory_id: 13287
   - title: Posting and deleting data via REST
     theory_id: 13292
   - title: Handling requests with bodies
     theory_id: 13334
+  - title: Application layers
+    theory_id: 13971
+  - title: "Web security, OWASP"
+    theory_id: 14755
   - title: Getting started with Spring Security
     theory_id: 13856
   - title: Authentication
@@ -100,6 +108,8 @@ topics:
     theory_id: 15269
   - title: Spring actuator
     theory_id: 16413
+  - title: Data Transfer Object in Spring
+    theory_id: 25613
   - title: Computer programming
     theory_id: 8739
   - title: Paradigms
@@ -208,24 +218,20 @@ topics:
     theory_id: 19510
   - title: Complex constructions in pseudocode
     theory_id: 20922
+  - title: External resources
+    theory_id: 6216
   - title: Fixed-size array
     theory_id: 20078
   - title: Dynamic array
     theory_id: 5357
   - title: Web development
     theory_id: 13931
-  - title: External resources
-    theory_id: 6216
-  - title: HTML basics
-    theory_id: 6434
   - title: Libraries
     theory_id: 8504
   - title: Frameworks
     theory_id: 6701
-  - title: Tags and Attributes
-    theory_id: 7536
-  - title: HTML page structure
-    theory_id: 6491
+  - title: HTML basics
+    theory_id: 6434
   - title: What is a bug
     theory_id: 5504
   - title: Functional testing
@@ -234,6 +240,12 @@ topics:
     theory_id: 7545
   - title: Dependency injection
     theory_id: 20580
+  - title: Tags and Attributes
+    theory_id: 7536
+  - title: HTML page structure
+    theory_id: 6491
+  - title: Introduction to databases
+    theory_id: 8497
   - title: Interfaces
     theory_id: 9640
   - title: YAML
@@ -242,10 +254,18 @@ topics:
     theory_id: 9332
   - title: Processes and threads
     theory_id: 9420
+  - title: XML
+    theory_id: 6901
   - title: Introduction to software architecture
     theory_id: 15368
   - title: JSON
     theory_id: 6854
+  - title: Data and object mapping
+    theory_id: 8262
+  - title: Reducing boilerplate code with Lombok
+    theory_id: 13983
+  - title: Design principles
+    theory_id: 8956
   - title: Introduction to logging
     theory_id: 5538
   - title: Debugging techniques
@@ -254,6 +274,8 @@ topics:
     theory_id: 21027
   - title: Authentication and Authorization
     theory_id: 14219
+  - title: Coupling and cohesion
+    theory_id: 21478
   - title: Introduction to generic programming
     theory_id: 3492
   - title: Generics and Object
@@ -330,31 +352,29 @@ topics:
     theory_id: 3587
   - title: Interface
     theory_id: 3615
-  - title: Abstract class
-    theory_id: 3597
+  - title: toString()
+    theory_id: 3584
   - title: Inner classes
     theory_id: 11505
+  - title: Records
+    theory_id: 18329
   - title: Boxing and unboxing
     theory_id: 3595
   1:
+  - title: Logging in Spring Boot
+    theory_id: 17457
   - title: H2 database
     theory_id: 8762
-  - title: HTTP Basic Auth
-    theory_id: 7778
   - title: Exception handling
     theory_id: 8780
   - title: Advanced exception handling in Spring Boot
     theory_id: 19855
+  - title: HTTP Basic Auth
+    theory_id: 7778
   - title: Custom User Store
     theory_id: 16191
   - title: Getting authenticated user details
     theory_id: 16710
-  - title: Introduction to databases
-    theory_id: 8497
-  - title: XML
-    theory_id: 6901
-  - title: Data and object mapping
-    theory_id: 8262
   2:
   - title: Bean validation
     theory_id: 9355
@@ -373,10 +393,6 @@ topics:
   3:
   - title: Using Spring MVC
     theory_id: 14409
-  - title: Introduction to Spring Data
-    theory_id: 16299
-  - title: CRUD repositories
-    theory_id: 18031
   - title: Transaction management
     theory_id: 18039
   - title: POST vs. PUT requests
@@ -401,10 +417,10 @@ topics:
     theory_id: 8619
   - title: The NULL value
     theory_id: 7907
-  - title: Intro to MySQL
-    theory_id: 16662
   - title: Special WHERE operators
     theory_id: 10521
+  - title: Intro to MySQL
+    theory_id: 16662
   - title: Basic INSERT statement
     theory_id: 9059
   - title: Basic DELETE statement
@@ -445,9 +461,5 @@ topics:
   - title: Object-Relational Mapping (ORM)
     theory_id: 8312
   5:
-  - title: Logging in Spring Boot
-    theory_id: 17457
-  - title: The concept of patterns
-    theory_id: 3611
   - title: Singleton
     theory_id: 3555
